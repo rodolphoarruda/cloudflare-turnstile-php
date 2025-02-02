@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="simple.css">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <title>Turnstile</title>
 </head>
@@ -39,6 +39,7 @@ if (isset($_POST['submit'])) {
     <h1><?php echo $_SESSION['name']; ?>!</h1>
     <p><?php echo $warning; ?></p>
     <form action="" method="post">
+        <label for="lastname">Your last name</label>
         <input type="text" name="lastname">
         <button type="submit" name="submit" value="submit">Submit</button>
 
